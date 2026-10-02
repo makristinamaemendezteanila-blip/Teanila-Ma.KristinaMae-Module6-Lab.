@@ -44,7 +44,7 @@ function isValidFullName(value) {
 
 function getPasswordProblems(value) {
   var problems = [];
-  if (value.length < 😎 problems.push("at least 8 characters");
+  if (value.length < 8) problems.push("at least 8 characters");
   if (!PASSWORD_UPPER.test(value)) problems.push("an uppercase letter");
   if (!PASSWORD_DIGIT.test(value)) problems.push("a digit");
   if (!PASSWORD_SYMBOL.test(value)) problems.push("one of @, $, or !");
